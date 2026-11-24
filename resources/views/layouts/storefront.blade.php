@@ -1,5 +1,5 @@
 @php
-    $storeName = $storeSettings['store_name'] ?? config('app.name', 'Pasar Lokal Nusantara');
+    $storeName = $storeSettings['store_name'] ?? config('app.name', 'Kopi Nusantara');
     $metaDescription = trim((string) View::yieldContent('meta_description', $storeSettings['store_description'] ?? ''));
     $pageTitle = trim((string) View::yieldContent('title', $storeName));
     $canonicalUrl = trim((string) View::yieldContent('canonical', url()->current()));
