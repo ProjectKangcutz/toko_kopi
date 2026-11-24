@@ -44,7 +44,7 @@
                         >
                     @else
                         <span class="d-inline-flex align-items-center justify-content-center rounded-3 bg-mlm-secondary text-mlm-primary flex-shrink-0" style="width: 40px; height: 40px;">
-                            <i class="bi bi-shop fs-5"></i>
+                            <i class="bi bi-cup-hot-fill fs-5"></i>
                         </span>
                     @endif
                     <span class="text-truncate fs-5">{{ $storeName }}</span>
@@ -59,7 +59,7 @@
                         name="q"
                         value="{{ request('q') }}"
                         class="form-control"
-                        placeholder="Cari produk UMKM, kategori, atau SKU..."
+                        placeholder="Cari kopi, daerah asal, atau nama produk..."
                         aria-label="Cari produk"
                         maxlength="100"
                     >
@@ -103,7 +103,7 @@
                     name="q"
                     value="{{ request('q') }}"
                     class="form-control"
-                    placeholder="Cari produk UMKM..."
+                    placeholder="Cari kopi favorit Anda..."
                     aria-label="Cari produk"
                     maxlength="100"
                 >
@@ -128,7 +128,7 @@
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                         >
-                            <i class="bi bi-grid"></i> Kategori Produk
+                            <i class="bi bi-grid"></i> Jelajahi Kopi
                         </button>
                         <ul class="dropdown-menu shadow-sm border" aria-labelledby="desktopCategoryMenu" style="min-width: 240px;">
                             <li>
