@@ -1,0 +1,178 @@
+/* KOPI NUSANTARA — storefront visual system
+   Deliberately scoped to the storefront layout. Admin/customer dashboards remain untouched. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+body.coffee-storefront {
+    --coffee-ink: #2b211b;
+    --coffee-espresso: #38251c;
+    --coffee-roast: #593b2b;
+    --coffee-caramel: #b77945;
+    --coffee-gold: #d4aa70;
+    --coffee-cream: #f6f1e8;
+    --coffee-paper: #fffdf8;
+    --coffee-sage: #78816a;
+    --coffee-muted: #82776d;
+    --bs-body-font-family: 'DM Sans', sans-serif;
+    --bs-body-color: var(--coffee-ink);
+    --bs-body-bg: var(--coffee-cream);
+    background: var(--coffee-cream);
+    color: var(--coffee-ink);
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: -.01em;
+}
+body.coffee-storefront h1,
+body.coffee-storefront h2,
+body.coffee-storefront h3,
+body.coffee-storefront h4,
+body.coffee-storefront .display-6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -.035em;
+}
+body.coffee-storefront a { transition: color .2s ease, background-color .2s ease, border-color .2s ease, transform .2s ease; }
+body.coffee-storefront .container { max-width: 1280px; }
+body.coffee-storefront .text-mlm-primary { color: var(--coffee-espresso) !important; }
+body.coffee-storefront .text-mlm-muted { color: var(--coffee-muted) !important; }
+body.coffee-storefront .bg-mlm-surface { background: var(--coffee-paper) !important; }
+body.coffee-storefront .bg-mlm-secondary { background: #eee5d7 !important; }
+body.coffee-storefront .btn-primary,
+body.coffee-storefront .btn-accent {
+    --bs-btn-bg: var(--coffee-espresso);
+    --bs-btn-border-color: var(--coffee-espresso);
+    --bs-btn-color: #fffaf2;
+    --bs-btn-hover-bg: var(--coffee-caramel);
+    --bs-btn-hover-border-color: var(--coffee-caramel);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-bg: var(--coffee-roast);
+    --bs-btn-active-border-color: var(--coffee-roast);
+    border-radius: 999px;
+    font-weight: 700;
+    padding: .78rem 1.35rem;
+    box-shadow: 0 8px 22px rgba(56,37,28,.12);
+}
+body.coffee-storefront .btn-outline-primary {
+    --bs-btn-color: var(--coffee-espresso);
+    --bs-btn-border-color: rgba(56,37,28,.28);
+    --bs-btn-hover-bg: var(--coffee-espresso);
+    --bs-btn-hover-border-color: var(--coffee-espresso);
+    --bs-btn-hover-color: #fff;
+    border-radius: 999px;
+    font-weight: 700;
+}
+body.coffee-storefront .mlm-header {
+    background: rgba(255,253,248,.94) !important;
+    border-color: rgba(56,37,28,.1) !important;
+    box-shadow: 0 5px 24px rgba(56,37,28,.045);
+    backdrop-filter: blur(16px);
+}
+body.coffee-storefront .mlm-header .navbar-brand { letter-spacing: -.035em; }
+body.coffee-storefront .mlm-promo-bar {
+    background: var(--coffee-espresso);
+    color: #f8ead5;
+    font-size: .76rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+body.coffee-storefront .mlm-search-group {
+    border: 1px solid #e4d9c9;
+    border-radius: 999px;
+    overflow: hidden;
+    background: #fff;
+}
+body.coffee-storefront .mlm-search-group .form-control,
+body.coffee-storefront .mlm-search-group .btn { border: 0; background: transparent; box-shadow: none; }
+body.coffee-storefront .mlm-search-group .btn { background: var(--coffee-espresso); color: white; border-radius: 0; }
+body.coffee-storefront .mlm-icon-btn {
+    min-height: 42px;
+    border: 1px solid #e6ddcf;
+    border-radius: 999px;
+    background: #fffdf8;
+    color: var(--coffee-espresso);
+}
+body.coffee-storefront .mlm-cart-badge { background: var(--coffee-caramel); color: white; }
+body.coffee-storefront .mlm-hero-carousel,
+body.coffee-storefront .mlm-card {
+    border: 1px solid rgba(71,49,34,.09) !important;
+    border-radius: 24px !important;
+    box-shadow: 0 14px 42px rgba(56,37,28,.065);
+}
+body.coffee-storefront .mlm-hero-carousel { background: var(--coffee-espresso); }
+body.coffee-storefront .mlm-hero-slide { min-height: clamp(390px, 48vw, 590px); }
+body.coffee-storefront .mlm-hero-img { height: clamp(390px, 48vw, 590px); object-fit: cover; }
+body.coffee-storefront .mlm-hero-overlay {
+    background: linear-gradient(90deg, rgba(27,18,13,.82) 0%, rgba(27,18,13,.52) 48%, rgba(27,18,13,.04) 100%);
+}
+body.coffee-storefront .mlm-hero-overlay h1,
+body.coffee-storefront .mlm-hero-overlay h2 { max-width: 620px; font-size: clamp(2.4rem, 5vw, 4.8rem); line-height: 1.04; }
+body.coffee-storefront .mlm-category-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .65rem 1rem;
+    border: 1px solid #e3d8c8;
+    border-radius: 999px;
+    background: var(--coffee-paper);
+    color: var(--coffee-roast);
+    font-size: .88rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+body.coffee-storefront .mlm-category-chip:hover,
+body.coffee-storefront .mlm-category-chip.active {
+    background: var(--coffee-espresso);
+    border-color: var(--coffee-espresso);
+    color: #fffaf2;
+}
+body.coffee-storefront .mlm-product-card,
+body.coffee-storefront .product-card,
+body.coffee-storefront .card {
+    border-color: rgba(71,49,34,.1);
+    border-radius: 20px;
+}
+body.coffee-storefront .card { background: var(--coffee-paper); box-shadow: 0 8px 28px rgba(56,37,28,.045); }
+body.coffee-storefront .card:hover,
+body.coffee-storefront .mlm-card:hover { border-color: rgba(183,121,69,.35) !important; }
+body.coffee-storefront .card .card-img-top { border-radius: 18px 18px 0 0; }
+body.coffee-storefront .mlm-gallery-main { border-radius: 22px !important; }
+body.coffee-storefront .form-control,
+body.coffee-storefront .form-select {
+    border-color: #dfd4c5;
+    border-radius: 12px;
+    min-height: 44px;
+    background-color: #fffdf9;
+}
+body.coffee-storefront .form-control:focus,
+body.coffee-storefront .form-select:focus {
+    border-color: var(--coffee-caramel);
+    box-shadow: 0 0 0 .22rem rgba(183,121,69,.13);
+}
+body.coffee-storefront .breadcrumb { font-size: .84rem; }
+body.coffee-storefront .breadcrumb a { color: var(--coffee-caramel); text-decoration: none; }
+body.coffee-storefront .pagination .page-link { color: var(--coffee-espresso); border-color: #e5dacc; }
+body.coffee-storefront .pagination .active .page-link { background: var(--coffee-espresso); border-color: var(--coffee-espresso); color: #fff; }
+body.coffee-storefront footer.bg-mlm-surface {
+    background: #2e211a !important;
+    color: #f4e9d9;
+    border-color: transparent !important;
+}
+body.coffee-storefront footer .text-mlm-primary,
+body.coffee-storefront footer .text-mlm-muted,
+body.coffee-storefront footer h5,
+body.coffee-storefront footer h6 { color: #f4e9d9 !important; }
+body.coffee-storefront footer .mlm-footer-link,
+body.coffee-storefront footer a { color: #d9c8b4; }
+body.coffee-storefront footer .mlm-footer-link:hover,
+body.coffee-storefront footer a:hover { color: #e4b77f; }
+body.coffee-storefront .modal-content { border: 0; border-radius: 22px; overflow: hidden; }
+body.coffee-storefront .offcanvas { background: var(--coffee-paper); }
+@media (max-width: 767.98px) {
+    body.coffee-storefront .container { padding-left: 18px; padding-right: 18px; }
+    body.coffee-storefront .mlm-hero-slide,
+    body.coffee-storefront .mlm-hero-img { min-height: 430px; height: 430px; }
+    body.coffee-storefront .mlm-hero-overlay { background: linear-gradient(0deg, rgba(27,18,13,.82), rgba(27,18,13,.12)); align-items: end !important; }
+    body.coffee-storefront .mlm-hero-overlay h1,
+    body.coffee-storefront .mlm-hero-overlay h2 { font-size: 2.55rem; }
+    body.coffee-storefront .mlm-card { border-radius: 18px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+    body.coffee-storefront *, body.coffee-storefront *::before, body.coffee-storefront *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
