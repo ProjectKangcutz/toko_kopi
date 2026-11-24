@@ -157,8 +157,8 @@
     <section class="container py-4">
         <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
             <div>
-                <h2 class="h4 fw-bold mb-1">Kategori Unggulan</h2>
-                <p class="small text-mlm-muted mb-0">Temukan produk lokal berdasarkan kategori pilihan</p>
+                <h2 class="h4 fw-bold mb-1">Jelajahi Cita Rasa Nusantara</h2>
+                <p class="small text-mlm-muted mb-0">Pilihan kopi dan perlengkapan seduh dari berbagai penjuru Indonesia</p>
             </div>
             <a href="{{ $catalogUrl }}" class="btn btn-sm btn-outline-primary flex-shrink-0">Semua Produk</a>
         </div>
@@ -213,8 +213,8 @@
         <section class="container py-4">
             <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
                 <div>
-                    <h2 class="h4 fw-bold mb-1">Promo Spesial Hari Ini</h2>
-                    <p class="small text-mlm-muted mb-0">Penawaran harga hemat yang sedang berlaku</p>
+                    <h2 class="h4 fw-bold mb-1">Penawaran Istimewa</h2>
+                    <p class="small text-mlm-muted mb-0">Temukan kopi pilihan dengan harga terbaik</p>
                 </div>
                 <a href="{{ $catalogUrl }}?promo=1" class="btn btn-sm btn-outline-primary flex-shrink-0">Lihat Promo</a>
             </div>
@@ -233,8 +233,8 @@
         <section id="katalog-unggulan" class="container py-4">
             <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
                 <div>
-                    <h2 class="h4 fw-bold mb-1">Produk Pilihan</h2>
-                    <p class="small text-mlm-muted mb-0">Rekomendasi terbaik pilihan pengelola toko</p>
+                    <h2 class="h4 fw-bold mb-1">Pilihan Barista Kami</h2>
+                    <p class="small text-mlm-muted mb-0">Koleksi pilihan untuk pengalaman seduh yang lebih istimewa</p>
                 </div>
                 <a href="{{ $catalogUrl }}" class="btn btn-sm btn-outline-primary flex-shrink-0">Lihat Semua</a>
             </div>
@@ -298,8 +298,8 @@
         <section class="container py-4">
             <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
                 <div>
-                    <h2 class="h4 fw-bold mb-1">Produk Terlaris</h2>
-                    <p class="small text-mlm-muted mb-0">Paling banyak dipesan oleh pelanggan kami</p>
+                    <h2 class="h4 fw-bold mb-1">Paling Dicari Pecinta Kopi</h2>
+                    <p class="small text-mlm-muted mb-0">Favorit pelanggan yang layak masuk ke cangkir Anda</p>
                 </div>
                 <a href="{{ $catalogUrl }}?sort=bestseller" class="btn btn-sm btn-outline-primary flex-shrink-0">Lihat Katalog</a>
             </div>
@@ -318,8 +318,8 @@
         <section class="container py-4">
             <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
                 <div>
-                    <h2 class="h4 fw-bold mb-1">Produk Terbaru</h2>
-                    <p class="small text-mlm-muted mb-0">Koleksi terbaru yang baru saja hadir di toko</p>
+                    <h2 class="h4 fw-bold mb-1">Baru Dipanggang, Baru Hadir</h2>
+                    <p class="small text-mlm-muted mb-0">Temukan koleksi terbaru dari kedai dan roastery pilihan</p>
                 </div>
                 <a href="{{ $catalogUrl }}?sort=latest" class="btn btn-sm btn-outline-primary flex-shrink-0">Jelajahi Semua</a>
             </div>
@@ -337,8 +337,8 @@
 {{-- 8. Keunggulan Toko & Informasi Layanan --}}
 <section id="keunggulan-toko" class="container py-4">
     <div class="mb-3">
-        <h2 class="h4 fw-bold mb-1">Mengapa Belanja di {{ $storeName }}</h2>
-        <p class="small text-mlm-muted mb-0">Standar layanan dan jaminan kualitas transaksi untuk pelanggan</p>
+        <h2 class="h4 fw-bold mb-1">Lebih dari Sekadar Secangkir Kopi</h2>
+        <p class="small text-mlm-muted mb-0">Cerita asal, mutu pilihan, dan pengalaman belanja yang nyaman</p>
     </div>
     <div class="row g-3">
         @foreach($advantages as $advantage)
