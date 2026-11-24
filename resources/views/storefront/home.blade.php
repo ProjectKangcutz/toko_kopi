@@ -1,7 +1,7 @@
 @extends('layouts.storefront')
 
 @php
-    $storeName = $storeSettings['store_name'] ?? 'Pasar Lokal Nusantara';
+    $storeName = $storeSettings['store_name'] ?? 'Kopi Nusantara';
     $catalogUrl = Route::has('storefront.catalog') ? route('storefront.catalog') : url('/produk');
     $articlesUrl = Route::has('storefront.articles') ? route('storefront.articles') : url('/artikel');
     $hasAnyProducts = $featuredProducts->isNotEmpty()
