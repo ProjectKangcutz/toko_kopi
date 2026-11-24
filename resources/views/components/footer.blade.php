@@ -4,7 +4,7 @@
 ])
 
 @php
-    $storeName = $storeSettings['store_name'] ?? 'Kopi Nusantara';
+    $storeName = $storeSettings['store_name'] ?? 'Pasar Lokal Nusantara';
     $footerCol1Menus = collect($storefrontNav['footerCol1Menus'] ?? []);
     $footerCol2Menus = collect($storefrontNav['footerCol2Menus'] ?? []);
     $footerPolicyMenus = collect($storefrontNav['footerPolicyMenus'] ?? []);
@@ -25,7 +25,7 @@
                             style="height: 36px; max-width: 120px;"
                         >
                     @endif
-                    <div><h5 class="fw-bold text-mlm-primary mb-0">{{ $storeName }}</h5><span class="small text-mlm-muted">Satu Nusantara, Seribu Cerita Kopi.</span></div>
+                    <h5 class="fw-bold text-mlm-primary mb-0">{{ $storeName }}</h5>
                 </div>
                 <p class="text-mlm-muted small mb-3">{{ $storeSettings['store_description'] ?? '' }}</p>
 
@@ -128,7 +128,7 @@
         <hr class="my-4">
         <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 small text-mlm-muted">
             <span>&copy; {{ date('Y') }} {{ $storeName }}. Seluruh hak cipta dilindungi.</span>
-            <span>Pembayaran aman melalui Midtrans &middot; Pengiriman ke seluruh Indonesia</span>
+            <span>Pembayaran aman Midtrans &amp; Pengiriman Kurir Resmi Indonesia</span>
         </div>
     </div>
 </footer>

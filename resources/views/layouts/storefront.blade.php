@@ -1,5 +1,5 @@
 @php
-    $storeName = $storeSettings['store_name'] ?? config('app.name', 'Kopi Nusantara');
+    $storeName = $storeSettings['store_name'] ?? config('app.name', 'Pasar Lokal Nusantara');
     $metaDescription = trim((string) View::yieldContent('meta_description', $storeSettings['store_description'] ?? ''));
     $pageTitle = trim((string) View::yieldContent('title', $storeName));
     $canonicalUrl = trim((string) View::yieldContent('canonical', url()->current()));
@@ -66,11 +66,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="{{ asset('assets/css/modern-local-market.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/coffee-nusantara.css') }}" rel="stylesheet">
 
     <style>
         :root {
@@ -86,7 +85,7 @@
     @stack('structured_data')
     @stack('styles')
 </head>
-<body class="coffee-storefront d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100">
     <x-header
         :store-settings="$storeSettings"
         :storefront-nav="$storefrontNav ?? []"

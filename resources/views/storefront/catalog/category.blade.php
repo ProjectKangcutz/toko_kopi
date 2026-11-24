@@ -65,7 +65,7 @@
 
     <section>
         <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
-            <h2 class="h5 fw-bold mb-0">Koleksi {{ $category->name }}</h2>
+            <h2 class="h5 fw-bold mb-0">Produk Kategori {{ $category->name }}</h2>
             <a href="{{ route('storefront.catalog') }}" class="btn btn-sm btn-outline-primary">Semua Produk</a>
         </div>
 
@@ -81,7 +81,7 @@
             <x-empty-state
                 icon="bi-grid"
                 title="Belum Ada Produk di Kategori Ini"
-                message="Saat ini belum ada kopi pilihan tersedia pada kategori {{ $category->name }}."
+                message="Saat ini belum ada produk aktif dengan stok tersedia pada kategori {{ $category->name }}."
                 action-label="Lihat Semua Produk"
                 :action-url="route('storefront.catalog')"
             />
