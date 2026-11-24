@@ -5,7 +5,7 @@
 ])
 
 @php
-    $storeName = $storeSettings['store_name'] ?? 'Pasar Lokal Nusantara';
+    $storeName = $storeSettings['store_name'] ?? 'Kopi Nusantara';
     $headerMenus = collect($storefrontNav['headerMenus'] ?? []);
     $navCategories = collect($storefrontNav['navCategories'] ?? []);
     $catalogUrl = Route::has('storefront.catalog') ? route('storefront.catalog') : url('/produk');
