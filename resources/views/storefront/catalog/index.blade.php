@@ -18,9 +18,9 @@
     <section class="mlm-card p-4 mb-4 bg-mlm-secondary border-0">
         <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3">
             <div>
-                <h1 class="h2 fw-bold text-mlm-primary mb-2">Katalog Produk</h1>
+                <span class="small text-uppercase fw-bold text-mlm-muted d-block mb-2">Jelajahi kekayaan kopi Indonesia</span><h1 class="h2 fw-bold text-mlm-primary mb-2">Koleksi Kopi Nusantara</h1>
                 <p class="text-mlm-muted small mb-0" style="max-width: 680px;">
-                    {{ $storeSettings['store_description'] ?? 'Temukan seluruh koleksi produk UMKM lokal pilihan siap kirim.' }}
+                    {{ $storeSettings['store_description'] ?? 'Dari dataran tinggi Gayo hingga pegunungan Toraja, temukan kopi pilihan dan perlengkapan seduh untuk ritual harian Anda.' }}
                 </p>
             </div>
             <div class="small fw-semibold text-mlm-primary flex-shrink-0">
@@ -36,7 +36,7 @@
     @if($categories->isNotEmpty())
         <section class="mb-4">
             <div class="d-flex align-items-center justify-content-between mb-2">
-                <h2 class="h6 fw-bold text-uppercase text-mlm-muted mb-0">Jelajahi Kategori</h2>
+                <h2 class="h6 fw-bold text-uppercase text-mlm-muted mb-0">Jelajahi Koleksi</h2>
             </div>
             <div class="d-flex flex-wrap gap-2">
                 <a href="{{ route('storefront.catalog') }}" class="mlm-category-chip active">
@@ -54,7 +54,7 @@
 
     <section>
         <div class="d-flex justify-content-between align-items-center mb-3">
-            <h2 class="h5 fw-bold mb-0">Daftar Produk Tersedia</h2>
+            <h2 class="h5 fw-bold mb-0">Temukan Kopi Favorit Anda</h2>
         </div>
 
         @if($products->total() > 0 && $products->isEmpty())
