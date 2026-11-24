@@ -4,7 +4,7 @@
 ])
 
 @php
-    $storeName = $storeSettings['store_name'] ?? 'Pasar Lokal Nusantara';
+    $storeName = $storeSettings['store_name'] ?? 'Kopi Nusantara';
     $footerCol1Menus = collect($storefrontNav['footerCol1Menus'] ?? []);
     $footerCol2Menus = collect($storefrontNav['footerCol2Menus'] ?? []);
     $footerPolicyMenus = collect($storefrontNav['footerPolicyMenus'] ?? []);
