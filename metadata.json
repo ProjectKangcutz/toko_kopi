@@ -1,0 +1,8 @@
+{
+  "name": "Pasar Lokal Nusantara — Online Shop UMKM (Laravel 13)",
+  "description": "Aplikasi Online Shop UMKM Profesional berbasis Laravel 13, MySQL 8, Blade, Bootstrap 5, Alpine.js, Midtrans, dan RajaOngkir.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

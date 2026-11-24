@@ -1,0 +1,22 @@
+# Node / Frontend
+node_modules/
+build/
+dist/
+coverage/
+
+# Laravel / PHP
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+/storage/logs/*.log
+/bootstrap/cache/*.php
+.phpunit.result.cache
+/database/*.sqlite
+
+# Environment & OS
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
